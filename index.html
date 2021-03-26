@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Jogo da Velha</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+		<meta charset="utf-8">
+	</head>
+
+	<body>
+
+		<h1>Jogo da Velha</h1>
+
+		<div>
+			<div class="quadrado" id="1" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="2" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="3" onclick="escolherQuadrado(this.id)">-</div>
+		</div>
+
+		<div>
+			<div class="quadrado" id="4" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="5" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="6" onclick="escolherQuadrado(this.id)">-</div>
+		</div>
+
+		<div>
+			<div class="quadrado" id="7" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="8" onclick="escolherQuadrado(this.id)">-</div>
+			<div class="quadrado" id="9" onclick="escolherQuadrado(this.id)">-</div>
+		</div>
+
+		<div class="jogador">
+			<label>Jogador:</label>
+			<label id="jogador_selecionado"></label>
+		</div>
+
+		<div class="vencedor">
+			<label>Jogador Vencedor:</label>
+			<label id="jogador_vencedor"></label>
+		</div>
+
+		<div>
+			<button onclick="reiniciar()">Reiniciar</button>
+		</div>
+
+	</body>
+
+	<script src="script/velha.js"></script>
+</html>
